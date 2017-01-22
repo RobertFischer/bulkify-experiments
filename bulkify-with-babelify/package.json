@@ -1,0 +1,38 @@
+{
+  "name": "bulkify-updated",
+  "version": "1.0.0",
+  "description": "Demonstration of Bulkify using their provided example, but with some updates",
+  "main": "glob.js",
+  "scripts": {
+    "postinstall": "npm dedupe",
+    "babelify-first": "browserify -t babelify -t bulkify glob.js",
+    "babelify-last": "browserify -t bulkify -t babelify glob.js",
+    "babelify-global": "browserify -t bulkify -g babelify glob.js",
+    "babelify-last-and-global": "browserify -t bulkify -t babelify -g babelify glob.js",
+    "bulkify-then-babel": "browserify -t bulkify glob.js | babel"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RobertFischer/bulkify-experiments.git"
+  },
+  "keywords": [
+    "bulkify",
+    "es6",
+    "bulk-require",
+    "npm",
+    "browserify"
+  ],
+  "author": "Robert Fischer",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/RobertFischer/bulkify-experiments/issues"
+  },
+  "homepage": "https://github.com/RobertFischer/bulkify-experiments#readme",
+  "devDependencies": {
+    "browserify": "latest",
+    "bulkify": "latest",
+    "babelify": "latest",
+    "babel-cli": "latest",
+    "babel-preset-env": "latest"
+  }
+}
