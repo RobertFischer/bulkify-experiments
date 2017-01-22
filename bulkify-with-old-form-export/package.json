@@ -1,0 +1,33 @@
+{
+  "name": "bulkify-with-old-form-export",
+  "version": "1.0.0",
+  "description": "Demonstration of Bulkify with old-form exporting",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "npm dedupe",
+    "build": "browserify -t bulkify -t babelify index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RobertFischer/bulkify-experiments.git"
+  },
+  "keywords": [
+    "bulkify",
+    "es6",
+    "bulk-require",
+    "npm",
+    "browserify"
+  ],
+  "author": "Robert Fischer",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/RobertFischer/bulkify-experiments/issues"
+  },
+  "homepage": "https://github.com/RobertFischer/bulkify-experiments#readme",
+  "devDependencies": {
+    "browserify": "latest",
+    "bulkify": "latest",
+    "babelify": "latest",
+    "babel-preset-env": "latest"
+  }
+}
